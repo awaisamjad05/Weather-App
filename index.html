@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG TECH - Premium Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons ke liye link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+    <div class="dashboard-container">
+        
+        <!-- Left Side: Search & Current Weather -->
+        <div class="main-weather-panel">
+            <div class="search-header">
+                <div class="search-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="city-input" placeholder="Enter city name...">
+                </div>
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div id="error-msg" class="error-wrapper" style="display: none;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>City not found! Please check the spelling.</span>
+            </div>
+
+            <div class="current-weather-display" id="weather-display">
+                <h1 id="city-name">Lahore</h1>
+                <p id="current-date">Tuesday, June 16</p>
+                
+                <div class="weather-visual-row">
+                    <div class="icon-container">
+                        <i id="weather-icon" class="fa-solid fa-cloud-sun weather-main-icon animate-glow"></i>
+                    </div>
+                    <div class="temp-wrapper">
+                        <span id="temperature">32</span><span class="unit">°C</span>
+                    </div>
+                </div>
+                
+                <h3 id="weather-desc">Scattered Clouds</h3>
+            </div>
+        </div>
+
+        <!-- Right Side: Detailed Metrics & 5-Day Forecast -->
+        <div class="details-panel">
+            <h3 class="panel-title">Weather Highlights</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <i class="fa-solid fa-droplet metric-icon humidity-color"></i>
+                    <div class="metric-info">
+                        <p>Humidity</p>
+                        <h4 id="humidity">65%</h4>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <i class="fa-solid fa-wind metric-icon wind-color"></i>
+                    <div class="metric-info">
+                        <p>Wind Speed</p>
+                        <h4 id="wind-speed">14 km/h</h4>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <i class="fa-solid fa-temperature-half metric-icon feels-color"></i>
+                    <div class="metric-info">
+                        <p>Feels Like</p>
+                        <h4 id="feels-like">35°C</h4>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <i class="fa-solid fa-gauge-simple-high metric-icon pressure-color"></i>
+                    <div class="metric-info">
+                        <p>Pressure</p>
+                        <h4 id="pressure">1008 hPa</h4>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="panel-title">5-Day Forecast</h3>
+            <div class="forecast-row" id="forecast-container">
+                <!-- Forecast items Javascript se generate honge -->
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
