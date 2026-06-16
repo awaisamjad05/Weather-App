@@ -1,36 +1,40 @@
-# AG-Tech - Premium Weather Dashboard
+# 🌤️ Weather App
 
-A visually stunning, glassmorphic, and feature-rich weather dashboard built using HTML5, CSS3 (Modern Flexbox/Grid), and Vanilla JavaScript. This application connects directly with high-performance public geocoding and meteorological servers to deliver real-time data without requiring any locked or paid API keys.
-
----
-
-## 🌟 Key Features
-
-*   **Premium AG-Tech UI Design:** Implements modern glassmorphism with dynamic ambient neon glow drops behind the main interface.
-*   **Real-time Accurate Sync:** Instantly fetches precise microclimate data based on exact global city coordinates.
-*   **Comprehensive Highlights:** Tracks critical weather indices including Ambient Temperature, Feels-Like index, relative Humidity, Wind Speed, and Atmospheric Pressure.
-*   **Integrated 5-Day Forecast Track:** Dynamic predictive mapping system that outputs upcoming thermal trends and weather status using smooth responsive scaling blocks.
-*   **Fluent Icon Typography:** Seamlessly maps World Meteorological Organization (WMO) codes into interactive vector weather icons via FontAwesome engine.
-*   **Intuitive Error Handling:** Built-in validation states that handle layout switches safely if a user provides empty inputs or unrecognizable strings.
+A sleek, modern, and responsive Weather Application that provides real-time weather updates for cities worldwide with a clean and interactive user interface.
 
 ---
 
-## 🛠️ Project Architecture & Files
+## ✨ Features
 
-The project space is cleanly isolated into three distinct layered files:
-
-*   `index.html` - The semantic structure skeleton utilizing inline SVG fonts and modular asymmetric grids.
-*   `style.css` - Custom styling engine tracking root CSS variables, blur layers, layout constraints, and looping text animations.
-*   `script.js` - Dynamic logical engine that wraps multiple async-await fetch responses, parses complex object nodes, formats timeline indexes, and prints safe raw string updates to the DOM.
+* **Real-Time Data:** Fetches live weather conditions including temperature, humidity, and wind speed using a reliable Weather API.
+* **Dynamic UI:** Features beautiful background changes or animations based on the current weather condition (e.g., sunny, rainy, cloudy).
+* **City Search:** Allows users to instantly search for the weather of any city globally with fast response times.
+* **Location Auto-Detect:** (Optional) Automatically detects and displays the weather for the user's current location.
+* **Fully Responsive:** Completely optimized for all screen sizes, including desktops, tablets, and smartphones.
 
 ---
 
-## 🚀 How To Run
+## 🛠️ Technologies Used
 
-Since the application processes asynchronous server requests through modular public loops, it runs flawlessly directly from your local filesystem.
+* **Frontend:** HTML5, CSS3 (Custom Styling & Grid/Flexbox Layout), JavaScript (ES6+)
+* **API Integration:** Fetch API / Async-Await to connect with OpenWeatherMap API (or alternative)
+* **Icons:** Weather Icons / FontAwesome
 
-1. Locate your localized workspace directory:
-   `C:\Users\Admin\source\repos\my-new-app\`
-2. **Double-click** on the `index.html` artifact.
-3. The platform will automatically mount onto your standard default browser environment (Chrome, Edge, Firefox, etc.) ready for immediate query interaction.
-4.
+---
+
+## 🚀 Live Demo
+
+You can check out the live demo of this project here:
+🔗 [Live Demo Link](https://awaisamjad05.github.io/Weather-App/) 
+
+---
+
+## 📂 Project Structure
+
+```text
+├── index.html          # Main web page structure
+├── css/
+│   └── style.css       # Custom styling and responsive design
+├── js/
+│   └── script.js       # API fetching logic and DOM manipulation
+└── README.md           # Project documentation
